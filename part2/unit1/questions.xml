@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<questions>
+    <subject>Web, HTML, &amp; CSS Problem Set</subject>
+    <overview>This quiz contains 8 questions, 1 mark each. Click "Submit" to grade and get the answers.</overview>
+    <question>
+        <type>MC</type>
+        <description>What does HTML stand for?</description>
+        <choices>
+            <choice>High-Tech Machine Learning</choice>
+            <choice>How To Meet Love</choice>
+            <choice>Hyper-Text Markup Language</choice>
+            <choice>Horribly Traumatic Morning Laziness</choice>
+        </choices>
+        <answer>2</answer>
+        <explanation>The Correct Answer is Hyper-Text Markup Language.</explanation>
+    </question>
+    <question>
+        <type>TF</type>
+        <description>Statement: CSS3 is short for Cascading Stylesheet 3.</description>
+        <choices>
+            <choice>True</choice>
+            <choice>False</choice>
+        </choices>
+        <answer>0</answer>
+        <explanation>The Correct Answer is True.</explanation>
+    </question>
+    <question>
+        <type>MA</type>
+        <description>Select all that apply: The valid heading elements</description>
+        <choices>
+            <choice>h2</choice>
+            <choice>h0</choice>
+            <choice>h6</choice>
+            <choice>h8</choice>
+        </choices>
+        <answer>0</answer>
+        <answer>2</answer>
+        <explanation>The Correct Answer is h2 and h6. </explanation>
+    </question>
+    <question>
+        <type>TF</type>
+        <description>Statement: The body section of an HTML document is the right place to refer to an external style sheet.</description>
+        <choices>
+            <choice>True</choice>
+            <choice>False</choice>
+        </choices>
+        <answer>1</answer>
+        <explanation>The Correct Answer is False.</explanation>
+    </question>
+    <question>
+        <type>MC</type>
+        <description>Who is making web standards?</description>
+        <choices>
+            <choice>Google</choice>
+            <choice>W3 Consortium</choice>
+            <choice>Apple</choice>
+            <choice>Nogizaka</choice>
+        </choices>
+        <answer>1</answer>
+        <explanation>The Correct Answer is W3 (World-Wide Wed) Consortium.</explanation>
+    </question>
+    <question>
+        <type>MC</type>
+        <description>Which HTML element is used for inserting a breaking line?</description>
+        <choices>
+            <choice>&lt;break&gt;</choice>
+            <choice>&lt;b&gt;</choice>
+            <choice>&lt;bl&gt;</choice>
+            <choice>&lt;br/&gt;</choice>
+        </choices>
+        <answer>3</answer>
+        <explanation>The Correct Answer is &lt;br/&gt;.</explanation>
+    </question>
+    <question>
+        <type>MA</type>
+        <description>Select all that apply: Valid HTTP Request Methods</description>
+        <choices>
+            <choice>LINK</choice>
+            <choice>POST</choice>
+            <choice>GET</choice>
+            <choice>MANAGE</choice>
+        </choices>
+        <answer>1</answer>
+        <answer>2</answer>
+        <explanation>The Correct Answer is POST and GET. The other valid request methods include: HEAD, PUT, DELETE, CONNECT, OPTIONS, and TRACE.</explanation>
+    </question>
+    <question>
+        <type>MC</type>
+        <description>An &lt;iframe&gt; is used to display a web page within a web page.</description>
+        <choices>
+            <choice>Yea, true.</choice>
+            <choice>Nah, false</choice>
+            <choice>What's iframe?</choice>
+        </choices>
+        <answer>0</answer>
+        <explanation>The Correct Answer is True.</explanation>
+    </question>
+</questions>

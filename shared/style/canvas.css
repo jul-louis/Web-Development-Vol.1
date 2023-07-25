@@ -1,0 +1,101 @@
+canvas {
+    /*background-color: #574957;*/
+    transform:scale(0.8);
+}
+h5 {
+    color: black;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+#player {
+    width: 300px;
+    padding: 20px 0;
+    height: 480px;
+    flex-direction: column;
+    background-color: #FFF0F1;
+    box-shadow: 14px 0 14px #1F1A1F;
+    position: absolute;
+    left:0;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+#player-menu {
+    text-orientation: upright;
+    margin-left: 1rem;
+}
+.show-page{
+    position: absolute;
+    background: black;
+    padding: 2rem;
+    border: 8px solid white;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: white;
+    font-size: 8rem;
+    font-style: italic;
+    cursor: pointer;
+}
+.prompt {
+    color: white;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+@media screen and (max-width: 830px) and (min-width: 723px) {
+    .show-page{
+        font-size: 6rem;
+    }
+}
+@media screen and (max-width: 722px) and (min-width: 440px){
+    .show-page{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 439px) {
+    .show-page{
+        font-size: 2rem;
+    }
+}
+#control-list {
+    bottom: 2rem;
+    width: 78%;
+    position: absolute;
+    z-index: 10;
+}
+.control {
+    width: auto;
+    padding: 20px 0;
+    height: 40px;
+    color: white;
+    text-decoration-color: #1F1A1F;
+    text-decoration-thickness: 0.4rem;
+    font-size: 2rem;
+    font-style: normal;
+}
+.control:hover {
+    color: #F53E2D;
+}
+.backstage {
+    width: 84%;
+    height: 100%;
+}
+#caption {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 78%;
+    position: absolute;
+    background: rgba(0,0,0, 0.5);
+    padding: 10px 20px;
+    bottom: 10rem;
+    border-radius: 10px;
+    visibility: hidden;
+    z-index: 15;
+}
+
+#res-canvas {
+    width: 100%;
+}
+

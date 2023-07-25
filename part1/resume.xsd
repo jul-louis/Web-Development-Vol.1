@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           targetNamespace="http://localhost" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="resume" type="loc:resumeType" xmlns:loc="http://localhost">
+        <xs:annotation>
+            <xs:documentation>By Louis Kano</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:complexType name="nameType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="firstname"/>
+            <xs:element type="xs:string" name="lastname"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addressType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="street" minOccurs="0"/>
+            <xs:element name="city">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Edmonton"/>
+                        <xs:enumeration value="Chengdu"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="province">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Alberta"/>
+                        <xs:enumeration value="Sichuan"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element type="xs:string" name="postal" minOccurs="0"/>
+            <xs:element name="country">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Canada"/>
+                        <xs:enumeration value="China"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="contactType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="mobile"/>
+            <xs:element type="xs:string" name="email"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="informationType">
+        <xs:sequence>
+            <xs:element type="loc:nameType" name="name" xmlns:loc="http://localhost"/>
+            <xs:element type="loc:addressType" name="address" xmlns:loc="http://localhost"/>
+            <xs:element type="loc:contactType" name="contact" xmlns:loc="http://localhost"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="degreeType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="degree_type"/>
+            <xs:element type="xs:string" name="major"/>
+            <xs:element type="xs:string" name="faculty"/>
+            <xs:element type="xs:string" name="department"/>
+            <xs:element type="xs:string" name="career"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="engineering_graduation_averageType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="grade_point_average"/>
+            <xs:element type="xs:string" name="max_possible_value"/>
+            <xs:element type="xs:string" name="status"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="fromType">
+        <xs:sequence>
+            <xs:element name="month">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="September"/>
+                        <xs:enumeration value="June"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element type="xs:string" name="year"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="toType">
+        <xs:sequence>
+            <xs:element name="month">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="June"/>
+                        <xs:enumeration value="August"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="year">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="2023"/>
+                        <xs:enumeration value="2018"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="universityType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="institution_name"/>
+            <xs:element type="loc:degreeType" name="degree" xmlns:loc="http://localhost"/>
+            <xs:element type="loc:engineering_graduation_averageType" name="engineering_graduation_average"
+                        xmlns:loc="http://localhost"/>
+            <xs:element type="loc:fromType" name="from" xmlns:loc="http://localhost"/>
+            <xs:element type="loc:toType" name="to" xmlns:loc="http://localhost"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="educationType">
+        <xs:sequence>
+            <xs:element type="loc:universityType" name="university" xmlns:loc="http://localhost"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="companyType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="name"/>
+            <xs:element type="loc:addressType" name="address" xmlns:loc="http://localhost"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="role_descriptionType">
+        <xs:sequence>
+            <xs:element name="role">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration
+                                value="Served at least 100 students and three teachers in one term (full-time)."/>
+                        <xs:enumeration
+                                value="Statistically analyzed each student’s progress in class and gave feedback and advice."/>
+                        <xs:enumeration
+                                value="Communicated among parents and teachers, solved students’ problems, supervised homework completion."/>
+                        <xs:enumeration value="Maintained managed educational tools."/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="experienceType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="award"/>
+            <xs:element type="xs:string" name="improvement"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="work_experienceType">
+        <xs:sequence>
+            <xs:element type="loc:companyType" name="company" xmlns:loc="http://localhost"/>
+            <xs:element type="xs:string" name="position"/>
+            <xs:element type="loc:role_descriptionType" name="role_description" maxOccurs="unbounded" minOccurs="0"
+                        xmlns:loc="http://localhost"/>
+            <xs:element type="loc:experienceType" name="experience" xmlns:loc="http://localhost"/>
+            <xs:element type="loc:fromType" name="from" xmlns:loc="http://localhost"/>
+            <xs:element type="loc:toType" name="to" xmlns:loc="http://localhost"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="resumeType">
+        <xs:sequence>
+            <xs:element type="loc:informationType" name="information" xmlns:loc="http://localhost"/>
+            <xs:element type="loc:educationType" name="education" xmlns:loc="http://localhost"/>
+            <xs:element type="loc:work_experienceType" name="work_experience" xmlns:loc="http://localhost"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Toolkit Collection</title>
+    <link rel="stylesheet" href="../shared/style/style.css">
+    <link rel="stylesheet" href="../shared/style/tools.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="tool-nav" role="navigation">
+            <div class="toolkit">Toolkit</div>
+            <ul class="df aic jcc lg-nav">
+                <li id="tool-1"><a href="#" class="trigger-hide" onclick="loadTool('unit')">Unit&nbsp;Convertor</a></li>
+                <li id="tool-2"><a href="#" class="trigger-hide" onclick="loadTool('mortgage')">Mortgage&nbsp;Kit</a></li>
+                <li id="tool-3"><a href="#" class="trigger-hide" onclick="loadTool('bmi')">BMI Calculator</a></li>
+            </ul>
+            <ul class="df aic jcc md-nav" id="collection">
+                <li>
+                    <a href="#" class="menu-icon">&#8801;</a>
+                    <ul>
+                        <li id="tool-4"><a class="trigger-hide" href="#" onclick="loadTool('unit')">Unit</a></li>
+                        <li id="tool-5"><a class="trigger-hide" href="#" onclick="loadTool('mortgage')">Mortgage</a></li>
+                        <li id="tool-6"><a class="trigger-hide" href="#" onclick="loadTool('bmi')">BMI</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="tool-guide" class="df aic jcsb fdc">
+            <h4>Toolkit Collection</h4>
+        </div>
+        <div id="tool-content" class="df aic fdc jcsb">
+            <h6>Select A Tool</h6>
+            <a href="#" class="btn" onclick="loadTool('unit')">Unit Convertor</a>
+            <a href="#" class="btn" onclick="loadTool('mortgage')">Mortgage Kit</a>
+            <a href="#" class="btn" onclick="loadTool('bmi')">BMI Calculator</a>
+        </div>
+    </header>
+    <script  src="../shared/scripts/jquery-3.6.0.js"></script>
+    <script  src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Web Development - HTML5, CSS, JavaScript</title>
+    <link rel="stylesheet" href="shared/style/style.css">
+    <link rel="stylesheet" href="shared/style/tma1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav id="tma-nav" role="navigation">
+        <div class="toolkit">Kraken Louis</div>
+        <ul class="df aic jcc lg-nav">
+            <li><a  target="_blank" href="part1/resume.xml">Résumé</a></li>
+            <li><a  target="_blank" href="part2/index.html">LEARN.net</a></li>
+            <li><a  target="_blank" href="part3/index.html">Slideshow</a></li>
+            <li><a  target="_blank" href="part4/index.html">Toolkit</a></li>
+        </ul>
+        <ul class="df aic jcc md-nav" id="collection">
+            <li>
+                <a href="#" class="menu-icon">&#8801;</a>
+                <ul>
+                    <li><a  target="_blank" href="part1/resume.xml">Résumé</a></li>
+                    <li><a  target="_blank" href="part2/index.html">LEARN.net</a></li>
+                    <li><a  target="_blank" href="part3/index.html">Slideshow</a></li>
+                    <li><a  target="_blank" href="part4/index.html">Toolkit</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="banner std-format">
+        <h1>Web Application Design & Implementation Bundle</h1>
+        <h2><a target="_blank" href="https://krakenlouis.com">krakenlouis.com</a></h2>
+        <h2>Louis Jullien Kano</h2>
+    </div>
+    <hr/>
+
+    <section class="std-format">
+        <h2>Part 1: Résumé</h2>
+        <a target="_blank" href="part1/resume.xml">Direct to Part 1: Résumé</a>
+        <h3>Description</h3>
+        <p>
+            In this part, an XML version of my resume is created. The requirements are:
+        </p>
+        <p>
+            1. Write the resume in XML including at least three sections: my general information, education background,
+            and work experience.
+        </p>
+        <p>2. Create a schema for resume.xml; </p>
+        <p>3. Write an XSLT for it, which allows the resume to be rendered on a web browser.</p>
+        <h3>Analysis &amp; Design</h3>
+        <p>
+            The XML file for the resume was created using "resume" as the root tag. Inside the tag, other tags were
+            included to store some classic content in a resume: contact information, education background, and work
+            experience. In the resume.xsl, I also include an embedded CSS inside the translated HTML to make the page
+            stylish and have a similar look as the other parts (webs, projects) in the assignment. The resume.xsd was
+            created for validating the content and structure of the resume XML.
+        </p>
+        <p>
+            On the website, the resume is presented inside the body of the HTML where you can view all details by
+            scrolling up and down depending on your device's height. Almost all information (excluding decorating texts
+            like "reference available upon requests") are retrieved from resume.xml using XPath etc. in resume.xsl.
+            With the valid XSLT, the resume can be successfully rendered on web browsers.
+        </p>
+        <h3>Setup Guide</h3>
+        <p>
+            Displaying styled XML is not as easy as for HTML, a Server (e.g., Apache) is required to host the files on a web browser
+            to view XML with style: Following the instructions given by the Server to view the resume on a web browser at a localhost.
+            For Apache specifically, copy the three files (resume.xml, resume.xsd, and resume.xsl) or the folder to the htdocs directory
+            on your computer. Then, you can find the files and styled XML page by visiting http://localhost/ on a browser.
+            You can access the resume by clicking the link on the navigation bar at the top, or the link at the beginning of the section.
+        </p>
+        <h3>Statement</h3>
+        <p>All three files are linked to each other, make sure them are in a same directory to work properly. </p>
+    </section>
+
+    <section class="std-format">
+        <h2>Part 2: LEARN.net</h2>
+        <a target="_blank" href="part2/index.html">Direct to Part 2: LEARN.net</a>
+        <h3>Description</h3>
+        <p>
+            Part 2 asked to create a web application applying skills integrated with all web techs that have been
+            introduced so far: HTML5, CSS3, JavaScript, XML, and Ajax. The web APP should cover contents in the first three
+            units of this course to help other learners. After each unit, a quiz is available for learners to test their
+            command of contents, which can be accessible right after the tutorial or through the navigation menu, buttons.
+            Other requirements are:
+        </p>
+        <p>
+            1. Web-based System with a name, banner, navigation menu, and buttons. It should begin with a welcome page
+            to greet the users and explain what the website does, what the users can get here, and instruction to proceed.
+        </p>
+        <p>
+            2. Must have 3 pages of tutorials, accessible through navigation menu or buttons. The tutorials should be useful.
+        </p>
+        <p>
+            3. The tutorial on HTML5 should contain at least 5 page-structure elements and 6 input new input types.
+        </p>
+        <p>
+            4. The quiz should be capable to grade the quiz once the submission button is clicked. The correct answers and
+            percentage grade will be shown to the user after that.
+        </p>
+        <p>
+            5. Quiz system should be designed to be highly maintainable. Meaning that the questions can be easily edited, added, or deleted;
+            and new quiz can be easily created.
+        </p>
+        <p>
+            6. Must create the web system with technologies covered from unit 1 to unit 3 (HTML5, CSS3, JavaScript, XML and Ajax).
+        </p>
+        <p>
+            7. External stylesheets should be used to retain a consistent and user-friendly interface for the system.
+        </p>
+        <p>
+            8. Do NOT use HTML5 table element for displaying information other than tabular information.
+        </p>
+        <h3>Analysis &amp; Design</h3>
+        <p>
+            As the main purpose of the website is to provide a study source. This website is a dedicated learning site for
+            introduction-level web technologies. The content includes: Web, HTML5, CSS3, JavaScrip, XML, &amp; Ajax, and
+            is divided into three units. There is a cover page for greeting the users and a guild to inform them what
+            the website is, and what they can learn from this website. The links to the tutorial materials are given in the cover page.
+            The cover page is designed in a simple manner for better visual experience. The banner "Instruction to Web Tech" and
+            slogan "First Step to be a Web Developer" are shown there for informing the user the purpose of the website.
+            The links are presented in a straightforward approach as you can see. Hovering your mouse on the slogan area, you
+            will notice the appearance of the welcome block displayed on the bottom of screen.
+        </p>
+        <p>
+            In the tutorial pages, three buttons are provided for convenience. A menu is also available to access each
+            tutorial and corresponding quizzes directly.
+            Questions in each quiz are stored in an XML file so that they can be edited, added, removed easily. New quizzes
+            can be created by creating a new XML with the same structure. There are two question types in the quizzes:
+            Multiple Choices (MCs) and Multiple Answers (MAs). You need to choose the best answer of an MC and all correct
+            answers of an MA to score. Each quiz contain 8 questions and 1 MarK is assigned to each question.
+        </p>
+        <p>
+            Once a leaner clicks the submission button. The quiz will be graded and an alert box will show up to tell them
+            the grade they get, both correct numbers and a percentage grade. Close the alert box, the grade is displayed
+            at the top of quiz and correct answers for each question is displayed immediately after each question. The quizzes
+            are accessible after the tutorial and in the menu page using the links.
+        </p>
+        <h3>Setup Guide</h3>
+        <p>
+            Click any link provides in this document for Part 2 to access the Web Learning System. Users will be directed
+            to the system in a new tab. You can follow the previous section as an instruction to use.
+            Tutorial Notes and Quizzes are available for users.
+        </p>
+        <h3>Acknowledgement</h3>
+        <p>
+            I used a free image from unsplash.com taken by Joshua Profitt. The image is free-to-use under the unsplash licence.
+            <a target="_blank" href="https://images.unsplash.com/photo-1569412148958-600837f89a65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80">link</a>
+        </p>
+    </section>
+
+    <section class="std-format">
+        <h2>Part 3: Slideshow</h2>
+        <a target="_blank" href="part3/index.html">Direct to Part 3: Slideshow</a>
+        <h3>Description</h3>
+        <p>
+            Part 3 is a slideshow based on HTML5 Canvas. The requirements are listed below:
+        </p>
+        <p>
+            1. The slideshow should be drawn on the canvas.
+        </p>
+        <p>
+            2. There should be a caption for each image in the show.
+        </p>
+        <p>
+            3. There should be a button to start/stop the show.
+        </p>
+        <p>
+            4. There should be a control to toggle the show between random and sequential.
+        </p>
+        <p>
+            5. There should be buttons to manually turn the show backward or forward, only if the show is in sequential mode.
+        </p>
+        <p>
+            6. There should be a dropdown list for users to select a transition/transformation effect from at least
+            three different transition/transformation effects.
+        </p>
+        <p>
+            7. Json array should be used to store image data for better maintainability of the images and captions.
+        </p>
+        <p>
+            8. To avoid copyright issues, you should use the images/photos you took. At least 20 images required.
+        </p>
+        <h3>Analysis &amp; Design</h3>
+        <p>
+            The website is a showcase of my photographic and art work. I tried to design the page in a minimalistic way and
+            make it compatible to other parts of the assignment. The website is a HTML5 canvas based slideshow which display
+            20 photographic work of mine in four different transition styles: plain, blur, fade in, and grayscale.
+            There is a button for enabling/disabling autoplay under the canvas. At two sides of it, there are two buttons
+            for manually move forward or backwards only in sequential mode. Sequential mode means the images are displayed in
+            a fixed order; randomized order can be enabled by clicking the corresponding toggle button in side menu. (Will Introduce Later.)
+        </p>
+        <p>
+            The four transition modes make the slideshow more dynamic. The Plain mode has no specific effect at all
+            compared with others; the Blur mode display the blurry image first, and it will turn to clear gradually; Grayscale mode
+            shows a B&amp;W image first and let it becoming colorful; Fade in mode is the classic one that makes an image
+            appear in the canvas gradually. All transitions are created by controlling the canvas properties such as
+            opacity for "fade in", and grayscale for "grayscale mode". I defined two JS functions to perform the procedure,
+            one for increasing property (opacity: 0-opaque, 1-not opaque), and another for decreasing properties such as filter
+            blur, grayscale properties (from a larger value to 0 to display the image clear). Intervals and animation
+            frames are used for autoplay and transition effects.
+        </p>
+        <p>
+            I meant to make the UI clear and simple, so I hide other toggle buttons, select
+            list in a hidden side menu. The menu is hidden by default and will be displayed once you hover your mouse over
+            the "menu" label on the left side of the canvas. Leaving the side menu and label area hides the side menu automatically.
+            This process is smoothly designed with css animation added. Also I hide the caption by default; hover your mouse on the canvas area to see it!
+        </p>
+        <h3>Setup Guide</h3>
+        <p>
+            Links to the websites are available under the title of the section and in the navigation bar. Please refer to
+            the previous description as additional instruction guide. The cover page inform you this is a slideshow, click
+            to enter the slideshow.
+        </p>
+        <h3>Acknowledgement</h3>
+        <p>
+            For the slideshow, I used only my original work. However, human memory is not 100% reliable. If I include
+            any image that is not mine by accident, I do NOT intend to do that; I will definitely remove it
+            if there is any, and apologise sincerely. (Most likely, ALL images are mine. Just In Case.) :)
+        </p>
+        <h3>Statement</h3>
+        <p>Filter property of HTML5 Canvas is not supported by Safari.</p>
+    </section>
+
+    <section class="std-format">
+        <h2>Part 4: Toolkits</h2>
+        <a target="_blank" href="part4/index.html">Direct to Part 4: Toolkits</a>
+        <h3>Description</h3>
+        <p>
+            Part 4 requires to create a web application that provides users the following utility tools: Measurement Convertors
+            (Length, Weight, Area, Volume); a mortgage calculator; A utility tool that you think could be useful. Justify why
+            it is useful. Other technical requirements include:
+        </p>
+        <p>
+            1. The system should have an integrated and user-friendly interface for user to access every tool.
+        </p>
+        <p>
+            2. JavaScript functions and built-in objects should be utilised to implement the system.
+        </p>
+        <p>
+            3. At any time, only one tool can be shown.
+        </p>
+        <p>
+            4. Ajax should be applied to eliminate whole page update when switching from one utility tool to another.
+        </p>
+        <p>
+            5. Event handler should be in place to perform calculations and print the results as soon as the user
+            has given enough input to the system.
+        </p>
+        <h3>Analysis &amp; Design</h3>
+        <p>
+            The website contains a utility tool collection for everyone's convenience: a Unit Convertor for measurements: Length,
+            Weight, Area, and Volume; A mortgage calculator for standard fixed rate mortgage; and a BMI chosen by me as
+            the third tool. BMI, shorten for Body Mass Index, is an indicator of .
+        </p>
+        <p>
+            This website uses ajax technologies to prevent whole page update when users switch between tools. The navigation menu
+            and greeting page provide fast access to each tool in the web application. Functions in scripts like checkTextFieldValid(),
+            and checkSelectValid() check the completion and validity of the input in the form: all selects have been made,
+            all text fields are filled with a numerical value. I defined some "form elements" in the HTML using classes;
+            a click event listener is attached to those elements to start the routine to check if all inputs were in place
+            and begin calculation process. The algorithms for each tool are explained as follows:
+        </p>
+        <h3>Documentation</h3>
+        <p class="sub">Algorithm for Measurement Convertors</p>
+        <p>
+            If the user choose to convert the first option in a select list, it is converted to other units directly by computing.
+            If the original unit is not the first option and for reducing redundancy in conversion between any two units,
+            the chosen unit is first converted to the first-option unit in the list and then converted to the user chosen
+            unit for conversion. For example, the first option in Length is kilometers; Km can be converted to any other length
+            measurement directly by the switch case statement. Other units, such as meter or centimeter will be converted to Km
+            first and then be converted to the chosen result unit. The unit conversions is referenced at:
+            <a target="_blank" href="https://www.lpl.arizona.edu/~rhill/conversion/units.htm">arizona.edu</a>.
+        </p>
+        <p class="sub">Algorithm for Mortgage Calculation</p>
+        <p>
+            The standard fixed rate mortgage is calculated here. It asks users to input the loan amount(w/o down payment),
+            down payment, interest rate, and number of months. Once all inputs are filed and validated, the monthly, biweekly
+            or weekly payment will be calculated using formula given in
+            <a target="_blank" href="https://www.bankrate.com/mortgages/mortgage-calculator/#how-mortgage-calculator-help">this website</a>.
+            The payment frequency is referenced and explained
+            <a target="_blank" href="https://www.cwbank.com/en/personal/mortgages/payment-frequency">here</a>.
+        </p>
+        <p class="sub">Algorithm for BMI</p>
+        <p>
+            BMI calculation is given by BMI = Mass/(height^2), which is recommended for people over 2 years old.
+            The form asks the user's age for this purpose. The BMI assessment for adults are given by the
+            <a target="_blank" href="https://www.cdc.gov/healthyweight/bmi/calculator.html">CDC</a>. Assessment in this
+            application is given based on the candidate's age and result BMI.
+        </p>
+        <h3>Setup Guide</h3>
+        <p>
+            Links to the websites are available under the title of the section and in the navigation bar. You can choose any tool
+            by click the buttons on the main screen and in the navigation bar. Partial update will be made when a tool is selected.
+            Every tool has been automated, meaning that once you have all valid input, the results will be printed automatically;
+            if you update your data, the results will be updated as well.
+        </p>
+        <p>
+            Filling all inputs means all selects have a valid selection and all text fields are filled with numerical values and are
+            NOT focused. If your input is done but the text field is focused, click anywhere blank outside the input box to proceed.
+        </p>
+        <h3>Statement</h3>
+        <p>
+            The assessment of BMI is based on CDC document and is not applicable for children under 2 years old. Therefore,
+            it is for reference only and any conclusion made by the tool should not be taken as medical advice. Thank you.
+        </p>
+
+    </section>
+    <hr/>
+
+    <div class="banner std-format">
+        <h2>Overall Statement</h2>
+        <p>All HTML, CSS, XML (w/ XSD), etc. have been validated.</p>
+        <p>XML&amp;XSD Validator: <a target="_blank" href="https://www.liquid-technologies.com/online-xsd-validator">Liquid Technology</a></p>
+        <p>HTML Parser: <a target="_blank" href="https://validator.w3.org/">Validator</a></p>
+        <h2>References</h2>
+        <p>
+            Image Credit: Free Image by Joshua Profitt used in Part Two Cover Page.
+            <a target="_blank" href="https://images.unsplash.com/photo-1569412148958-600837f89a65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80">link</a>
+        </p>
+        <p>Unit Conversion: <a target="_blank" href="https://www.lpl.arizona.edu/~rhill/conversion/units.htm">University of Arizona</a></p>
+        <p>W3C: Custom Toggle Style, <a target="_blank" href="https://www.w3schools.com/howto/howto_css_switch.asp">W3C Website</a></p>
+        <p>BANKRATE: Fixed Rate Mortgage<a target="_blank" href="https://www.bankrate.com/mortgages/mortgage-calculator/#how-mortgage-calculator-help">Mortgage Formula</a></p>
+        <p>CWB: Payment Frequencies: <a target="_blank" href="https://www.cwbank.com/en/personal/mortgages/payment-frequency">link</a></p>
+        <p>CDC BMI: <a target="_blank" href="https://www.cdc.gov/healthyweight/bmi/calculator.html">Reference</a></p>
+    </div>
+    <br/>
+
+</header>
+
+</body>
+</html>

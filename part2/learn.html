@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    <meta name="x-apple-disable-message-reformatting">-->
+    <meta name="viewport" content="width=device-width">
+    <title>Intro to Web Technologies</title>
+    <link rel="stylesheet" href="../shared/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <script>
+        let bg_image = new Image();
+        bg_image.src = '../shared/images/bg.jpeg';
+    </script>
+</head>
+<body>
+<header class="df aic jcc hidden" id="menu">
+    <div id="options">
+        <h1><a class="white" href="index.html">Home</a> </h1>
+        <h1><br/><a id="back-button" class="white" href="#">Back</a></h1>
+    </div>
+    <div class="float l-child img-bg inv-color"></div>
+    <div class="df jcc aic float r-child">
+        <div class="intro">
+            <h1>Unit 1 <a class="fr" href="#" onclick="notesLinkOnClickAction('unit1', true, true)">Quiz</a><br/><a href="#" onclick="notesLinkOnClickAction('unit1', true, false)">Introduction to Web, HTML, and CSS</a></h1>
+            <h1>Unit 2 <a class="fr" href="#" onclick="notesLinkOnClickAction('unit2', true, true)">Quiz</a><br/><a href="#" onclick="notesLinkOnClickAction('unit2', true, false)">Client-Side Scripting in JavaScript</a></h1>
+            <h1>Unit 3 <a class="fr" href="#" onclick="notesLinkOnClickAction('unit3', true, true)">Quiz</a><br/><a href="#" onclick="notesLinkOnClickAction('unit3', true, false)">XML &amp; Ajax</a></h1>
+        </div>
+    </div>
+</header>
+<header class="df aic jcc">
+    <div class="overlay" id="notes">
+        <div class="content-format">
+            <h1 id="heading"> </h1>
+            <div class="df aic jcse" id="notes-links">
+                <a href="#" class="btn" onclick="notesLinkOnClickAction('unit1', false, false)">Unit1</a>
+                <a href="#" class="btn" onclick="notesLinkOnClickAction('unit2', false, false)">Unit2</a>
+                <a href="#" class="btn" onclick="notesLinkOnClickAction('unit3', false, false)">Unit3</a>
+            </div>
+            <h2 id="overview"> </h2>
+            <hr/>
+            <div id="content"><!-- Here loads the notes or quizzed upon your requests --></div>
+            <div class="df jcc jcse">
+                <a href="#heading" class="btn" id="quiz-button" onclick="notesLinkOnClickAction(localStorage.getItem('unit_id'), false, true)">Start Quiz</a>
+            </div>
+            <form id="quiz"></form>
+            <br/>
+        </div>
+    </div>
+    <div class="label"><a class="menu-label" href="#" onclick="displayMenu()">menu:intro</a></div>
+</header>
+<script  src="../shared/scripts/jquery-3.6.0.js"></script>
+<script  src="scripts/learn_page.js"></script>
+<script  src="scripts/request_notes.js"></script>
+<script  src="scripts/request_quiz.js"></script>
+</body>
+</html>

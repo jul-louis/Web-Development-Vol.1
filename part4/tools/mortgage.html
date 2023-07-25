@@ -1,0 +1,43 @@
+<!-- BMI Calculator Form -->
+<form class="df aic jcc fdc" name="bmi" action="JavaScript:calculateMortgage()" method="POST">
+    <script  src="../part4/scripts/mortgage.js"></script>
+    <div>
+        <h6>Standard Fixed Rate Mortgage</h6>
+    </div>
+    <div class="input-area">
+        <div class="df aic jcsb">
+            <input class="bare-text form-element form-text-field" id="loan_amount_input" name="loan-text" type="text" placeholder="100000">
+            <label for="loan_amount_input">Loan Amount</label>
+        </div>
+        <div class="df aic jcsb">
+            <input class="bare-text form-element form-text-field" id="down_payment_amount_input" name="dp-text" type="text" placeholder="20000">
+            <label for="down_payment_amount_input">Down Payment</label>
+        </div>
+        <div class="df aic jcsb" id="mortgage-month">
+            <input class="bare-text form-element form-text-field" id="month_input" name="month-text" type="text" placeholder="# Month e.g., 120">
+            <label for="month_input">Number of Months</label>
+        </div>
+        <div class="df aic jcsb" id="mortgage-ir">
+            <input class="bare-text form-element form-text-field" id="ir-input" name="ir-text" type="text" placeholder="Interest Rate e.g., 8">
+            <label for="ir-input">Interest Rate, %</label>
+        </div>
+        <div>
+            <label class="custom-select">
+                <select class="form-select form-element" id="payment-frequency-select">
+                    <option selected disabled>Select Payment Frequencies... e.g., Monthly...</option>
+                    <option value="m">Monthly</option>
+                    <option value="bw">Bi-Weekly</option>
+                    <option value="w">Weekly</option>
+                </select>
+            </label>
+        </div>
+    </div>
+    <div class="df aic jcc fdc">
+<!--        <button class="btn" type="submit">Auto Calculate</button>-->
+        <button class="btn" type="reset" id="clear-btn">Clear</button>
+    </div>
+    <div>
+        <h6>Results</h6>
+        <h6 id="mortgage-results-value"></h6>
+    </div>
+</form>

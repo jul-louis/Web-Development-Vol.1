@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<notes>
+    <subject>Web, HTML, &amp; CSS</subject>
+    <overview>
+        This chapter introduces the basic concepts on the Web, HTML, and CSS. Go over the notes and see how well
+        you understand these topics by solving the given problem set.
+    </overview>
+    <topic>
+        <title>WEB</title>
+        <subtopic>
+            <title>Basics</title>
+            <content>
+                <entry>
+                    URLs of websites that handle private, important information, such as credit card numbers, often
+                    begin with "https://".
+                </entry>
+                <entry>
+                    HTTPS (Hypertext Transfer Protocol Secure)  is the standard for transferring encrypted data on the web. It combines HTTP with the
+                    Secure Socket Layer (SSL) and the more recent Transport Layer Security (TLS) cryptographic schemes
+                    for securing communications and identification information over the web.
+                </entry>
+                <entry>HTML documents normally contain hyperlinks, which load a specified web document when clicked.</entry>
+                <entry>
+                    When the user clicks a hyperlink, a web server locates the requested web page and sends it to
+                    the user's web browser.
+                </entry>
+                <entry>
+                    Hyperlinks can reference other web pages, e-mail addresses, files and more.
+                </entry>
+                <entry>
+                    If a hyperlink's URL is in the form mailto:emailAddress, clicking the link loads the default e-mail
+                    programme and opens a message window addressed to the specified e-mail address.
+                </entry>
+                <entry>URIs (Uniform Resource Identifiers) identify resources on the Internet.</entry>
+                <entry>URIs that start with 'http://' are called URLs (Uniform Resource Locators).</entry>
+                <entry>A URL contains information that directs a browser to the resource that the user wishes to access.</entry>
+                <entry>Popular web servers include Apache's HTTP Server and Microsoft's Internet Information Services (IIS).</entry>
+                <entry>W3C (World Wide Web Consortium) is a standards organization. Web technologies standardized by the W3C are called Recommendations.</entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>Servers Intro</title>
+            <content>
+                <entry>
+                    A web server responds to client requests (typically from a web browser) by providing resources such
+                    as HTML documents. When user enter a Uniform Resource Locator (URL) address into a web browser,
+                    they're requesting a specific document from a web server. The web server maps the URL to a resource
+                    on the serve maps the URL to a resource
+                </entry>
+                <entry>
+                    A web server and a client communicate using the platform-independent Hypertext Transfer Protocol
+                    (HTTP), a protocol for transferring requests and files over the Internet or an intranet.
+                </entry>
+                <entry>Any server that understands HTTP can receive a get request and respond appropriately.</entry>
+                <entry>
+                    HTTP status code 200 indicates success. Status code 404 informs the client that the web server could
+                    not locate the requested resource.
+                </entry>
+                <entry>Two most common HTTP request types are GET and POST.</entry>
+                <entry>GET request typically gets (or retrieves) information from a server.</entry>
+                <entry>post request typically posts (or sends) data to a server.</entry>
+                <entry>
+                    A get request limits the query string to a specific number of characters.
+                    Large amounts of information must be sent using the post method.
+                </entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>Servers</title>
+            <content>
+                <entry>
+                    To request documents from web servers, users must know the hostnames on which the web server software resides.
+                </entry>
+                <entry>
+                    The Apache HTTP Server, maintained by the Apache Software Foundation, is currently the most popular
+                    web server. It’s open source software that runs on UNIX, Linux, Mac OS X, Windows and numerous other platforms.
+                </entry>
+                <entry>
+                    Microsoft Internet Information Services (IIS) is a web server that is included with several versions
+                    of Windows. Installing IIS on a machine allows that computer to serve documents.
+                </entry>
+            </content>
+        </subtopic>
+    </topic>
+    <topic>
+        <title>HTML5</title>
+        <subtopic>
+            <title>Fundamentals</title>
+            <content>
+                <entry>
+                    HTML5 (HyperText Markup Language 5) is a markup language that specifies the structure and content of
+                    documents that are displayed in web browsers.
+                </entry>
+                <entry>
+                    HTML enables you to create content that will render appropriately across the extraordinary range of
+                    devices connected to the Internet.
+                </entry>
+                <entry>
+                    Document Type Declaration: DOCTYPE is required in HTML5 document so that browsers render the page in standard mode.
+                </entry>
+                <entry>
+                    Comments improves the documents' readability and maintainability. It starts with &lt;!-- and
+                    end with --&gt;.
+                </entry>
+                <entry>
+                    HTML5 documents delimit most elements with a start tag and end tag. There are several so-called “void elements” that do not
+                    have end tags.
+                </entry>
+                <entry>
+                    A start tag consists of the element name in angle brackets
+                </entry>
+                <entry>
+                    An end tag consists of the element name preceded by a forward slash (/) in angle brackets.
+                </entry>
+                <entry>
+                    Many start tags have attributes that provide additional information about an element, which
+                    browsers use to determine how to process the element.
+                </entry>
+                <entry>
+                    Each attribute has a name and a value separated by an equals sign (=).
+                </entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>Elements</title>
+            <content>
+                <entry>
+                    Title Element (&lt;title&gt; ... &lt;/title&gt;): The title element describes the web page. Titles usually appear in the browser
+                </entry>
+                <entry>
+                    The title element is called a nested element, as it's enclosed in the head element's start and end tags.
+                </entry>
+                <entry>Search engines use the title for indexing purposes and when displaying results.</entry>
+                <entry>
+                    Paragraph Element (&lt;p&gt; ... &lt;/p&gt;): All text placed between the &lt;p&gt; and &lt;/p&gt;
+                    tags forms one paragraph.
+                </entry>
+                <entry>
+                    Heading Elements: HTML5 provides 6 heading elements (h1 through h6) for specifying the relative
+                    importance of information. Heading element h1 is considered the most significant heading and is rendering
+                    in the largest font. E.g., &lt;h1&gt; heading text &lt;/h1&gt;.
+                </entry>
+                <entry>
+                    Image Element (img): For image rendering purpose. The img element's src attribute specifies an image's
+                    location. Every img element must have an alt attribute, which contains text that is displayed if the
+                    client render the image. Img element is a void element: e.g., &lt;img src = "cover.png" width = "90" height = "160"
+                    alt = "best film cover" /&gt;.
+                </entry>
+                <entry>
+                    Images are measured in pixels. Width and height are optional attributes; if omitted, the browser uses
+                    the image's actual width and height. Although these two attributes are optional, always includes them
+                    so that the browser can lay out the page properly even before it downloads the image.
+                </entry>
+                <entry>
+                    aside Element: It describes content that’s related to the surrounding content (such as an article)
+                    but is somewhat separate from the flow of the text.
+                </entry>
+                <entry>
+                    The footer element describes a footer, the content that usually appears at the bottom of the content
+                    or section element. E.g., &lt;footer&gt; footer content &lt;/footer&gt;.
+                </entry>
+                <entry>
+                    Horizontal Rule &lt;hr/&gt;: draws a horizontal line that goes across a webpage as a thematic break
+                    between paragraph-level elements. It's an empty element; it must have a start tag and be
+                    self-closing (No end tag).
+                </entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>New Input Types</title>
+            <content>
+                <entry>
+                    To bypass validation, add the formnovalidate attribute to input type submit: e.g., &lt;input type =
+                    "submit" value = "Submit" formnovalidate /&gt;.
+                </entry>
+                <entry>
+                    color: The color input type enables the user to enter a color. The proper format of a color input type
+                    is Hexadecimal code.
+                </entry>
+                <entry>
+                    email: The email input type enables the user enter an e-mail address or a list of e-mail addresses
+                    separated by commas (if the multiple attribute is specified).
+                </entry>
+                <entry>
+                    date: The date input type enables the user to enter a date in the form in format yyyy-mm-dd.
+                </entry>
+                <entry>
+                    datetime: This enables the user to enter a date (year, month, day), time (hour, minute, second,
+                    fraction of a second) and the time zone set to UTC (Coordinated Universal Time or Universal Time, Coordinated).
+                </entry>
+                <entry>
+                    datetime-local: This enables the user to enter the date and time in a single control. The data is
+                    entered as year, month, day, hour, minute, second and fraction of a second.
+                </entry>
+                <entry>
+                    number: This enables the user to enter a numerical value—mobile browsers typically display a numeric
+                    keypad for this input type. The step attribute determines the increment in which the numbers increase.
+                    The min and max attribute each sets the minimum and maximum valid numbers.
+                </entry>
+                <entry>
+                    search: The search input type provides a search field for entering a query.
+                </entry>
+            </content>
+        </subtopic>
+    </topic>
+    <topic>
+        <title>CSS</title>
+        <subtopic>
+            <title>Basics</title>
+            <content>
+                <entry>
+                    CSS3 (Cascading Style Sheets 3) is utilised to specify the presentation of elements
+                    separately from the structure of the document.
+                </entry>
+                <entry>
+                    CSS validator can ensure the code is correct and will work on CSS3-compliant browsers.
+                </entry>
+                <entry>
+                    Inline Styles: Apply CSS property by declaring an individual element's format using HTML5 attribute
+                    style.Each CSS property is followed by a colon and the value of the attribute; multiple property
+                    declarations are separated by a semicolon
+                </entry>
+                <entry>
+                    Embedded Style Sheets: Writing styles and embed them in the head section of an
+                    HTML5 document. This method separates presentation from content.
+                </entry>
+                <entry>
+                    Linking External Style Sheets - link element: Uses rel attribute to specify a relationship between
+                    two documents; rel attribute declares the linked document to be a stylesheet for the document. type
+                    attribute specifies the MIME type of the related document; and href attribute provides the URL for
+                    the document containing the style sheet.
+                </entry>
+                <entry>
+                    style element type attributes specifies the MIME type (the specific encoding format) of the style sheet.
+                    For CSS style sheet, text/css is specified.
+                </entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>New Features</title>
+            <content>
+                <entry>
+                    Box Shadows: Apply shadow effect to any block level element in CSS3: box-shadow: x-offset, y-offset,
+                    blur-radius, color;
+                </entry>
+                <entry>
+                    Rounded Corners: The border-radius property allows you to add rounded corners to an element. Any
+                    border-radius value greater than half of the shortest side length produces a completely round end.
+                </entry>
+                <entry>
+                    Color: CSS3 allows you to express color in several ways in addition to standard color names
+                    (such as Aqua) or hexadecimal RGB values (such as #00FFFF for Aqua).
+                </entry>
+                <entry>
+                    RGB (Red, Green, Blue) or RGBA (Red, Green, Blue, Alpha) gives you greater control over the exact
+                    colors in your web pages. The value for each color—red, green and blue—can range from 0 to 255.
+                </entry>
+                <entry>
+                    The alpha value—which represents opacity—can be any value in the range 0.0 (fully transparent)
+                    through 1.0 (fully opaque).
+                </entry>
+                <entry>
+                    Media Queries: The @media rule is used to determine the type and size
+                    of device on which the page is rendered.
+                </entry>
+            </content>
+        </subtopic>
+    </topic>
+</notes>

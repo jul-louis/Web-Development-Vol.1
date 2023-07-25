@@ -1,0 +1,49 @@
+<!-- BMI Calculator Form -->
+<form class="df aic jcc fdc" name="bmi" action="JavaScript:calculateBMI()" method="POST">
+    <script  src="../part4/scripts/bmi.js"></script>
+    <div>
+        <h6>Body Mass Index Calculator</h6>
+    </div>
+    <div class="input-area">
+        <div class="df aic jcsb">
+            <label for="unit-input-bmi" id="unit-input-bmi-text">Metric Units</label>
+            <label class="toggle" id="unit-input-bmi" style="margin-left: 0">>
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="df aic jcsb">
+            <input class="bare-text form-element form-text-field form-text-field-us" id="age_input" name="age-text" type="text" placeholder="Age e.g., 26">
+            <label for="age_input">yo, Age</label>
+        </div>
+        <div class="df aic jcsb" id="bmi-mt">
+            <input class="bare-text form-element form-text-field" id="height_input" name="height-text" type="text" placeholder="Height e.g., 165">
+            <label for="height_input">cm, Height</label>
+        </div>
+        <div class="df aic jcsb" id="bmi-us-ft">
+            <input class="bare-text form-element form-text-field-us" id="height_input-us-ft" name="height-text-ft" type="text" placeholder="Height e.g., 5">
+            <label for="height_input-us-ft">ft, Height</label>
+        </div>
+        <div class="df aic jcsb" id="bmi-us-in">
+            <input class="bare-text form-element form-text-field-us" id="height_input-us-in" name="height-text-in" type="text" placeholder="Height e.g., 7">
+            <label for="height_input-us-in">in, Height</label>
+        </div>
+        <div class="df aic jcsb" id="bmi-us-p">
+            <input class="bare-text form-element form-text-field-us" id="weight_input-p" name="height-text" type="text" placeholder="Weight e.g., 132">
+            <label for="weight_input-p">Pound, Weight</label>
+        </div>
+        <div class="df aic jcsb" id="bmi-mt-kg">
+            <input class="bare-text form-element form-text-field" id="weight_input-kg" name="height-text" type="text" placeholder="Weight e.g., 60">
+            <label for="weight_input-kg">Kg, Weight</label>
+        </div>
+    </div>
+    <div class="df aic jcc fdc">
+<!--        <button class="btn" type="submit">Auto Calculate</button>-->
+        <button class="btn" type="reset" id="clear-btn">Clear</button>
+    </div>
+    <div>
+        <h6>Results</h6>
+        <h6 id="bmi-results-value"></h6>
+        <h6 id="bmi-results-assess"></h6>
+    </div>
+</form>

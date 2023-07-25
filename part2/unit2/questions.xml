@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<questions>
+    <subject>JavaScript Problem Set</subject>
+    <overview>This quiz contains 8 questions, 1 mark each. Click "Submit" to grade and get the answers.</overview>
+    <question>
+        <type>MC</type>
+        <description>How to create an array in JavaScript?</description>
+        <choices>
+            <choice>var colors = [ 1: "yellow", 2: "aqua", 3: "blue" ]</choice>
+            <choice>var colors = ( "yellow", "aqua", "blue" )</choice>
+            <choice>var colors = "yellow", "aqua", "blue"</choice>
+            <choice>var colors = [ "yellow", "aqua", "blue" ] </choice>
+        </choices>
+        <answer>3</answer>
+        <explanation>The Correct Answer is, var colors = [ "yellow", "aqua", "blue" ].</explanation>
+    </question>
+    <question>
+        <type>MA</type>
+        <description>Select all that apply: Keywords to declare a variable in JS.</description>
+        <choices>
+            <choice>declare</choice>
+            <choice>const</choice>
+            <choice>let</choice>
+            <choice>var</choice>
+            <choice>"nothing"</choice>
+        </choices>
+        <answer>2</answer>
+        <answer>3</answer>
+        <answer>4</answer>
+        <explanation>The Correct Answer is var, let, and "nothing". </explanation>
+    </question>
+    <question>
+        <type>TF</type>
+        <description>Statement: JavaScript is the same as Java.</description>
+        <choices>
+            <choice>True</choice>
+            <choice>False</choice>
+        </choices>
+        <answer>1</answer>
+        <explanation>The Correct Answer is False. JavaScript is a script language.</explanation>
+    </question>
+    <question>
+        <type>TF</type>
+        <description>Statement: JavaScript is case-sensitive.</description>
+        <choices>
+            <choice>True</choice>
+            <choice>False</choice>
+        </choices>
+        <answer>0</answer>
+        <explanation>The Correct Answer is True.</explanation>
+    </question>
+    <question>
+        <type>MC</type>
+        <description>How to detect the client's browser name?</description>
+        <choices>
+            <choice>navigator.appName</choice>
+            <choice>browser.name</choice>
+            <choice>system.getBrowserName</choice>
+            <choice>client.browserName</choice>
+        </choices>
+        <answer>0</answer>
+        <explanation>The Correct Answer is to use navigator.appName.</explanation>
+    </question>
+    <question>
+        <type>MC</type>
+        <description>How do you round the number 6.48, to the nearest integer?</description>
+        <choices>
+            <choice>Math.int(6.48)</choice>
+            <choice>round(6.48)</choice>
+            <choice>Math.round(6.48)</choice>
+            <choice>Math.toNearInt(6.48)</choice>
+        </choices>
+        <answer>2</answer>
+        <explanation>The Correct Answer is Math.round(6.48).</explanation>
+    </question>
+    <question>
+        <type>MA</type>
+        <description>Select all that apply: correct ways to add a comment in JavaScript</description>
+        <choices>
+            <choice>// This is a comment</choice>
+            <choice>&lt;!-- This is also a comment --&gt;</choice>
+            <choice>/* Comment /*</choice>
+            <choice>/* Comment here */</choice>
+        </choices>
+        <answer>0</answer>
+        <answer>3</answer>
+        <explanation>The Correct Answer is // This is a comment, and /* Comment here */.</explanation>
+    </question>
+    <question>
+        <type>MC</type>
+        <description>How to write "Hello World" in an alert box?</description>
+        <choices>
+            <choice>alertBox("Hello World");</choice>
+            <choice>alert("Hello World");</choice>
+            <choice>msg("Hello World");</choice>
+            <choice>alertMsg("Hello World");</choice>
+        </choices>
+        <answer>1</answer>
+        <explanation>The Correct Answer is alert("Hello World");.</explanation>
+    </question>
+</questions>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../shared/style/style.css">
+    <link rel="stylesheet" href="../shared/style/canvas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <title>Slide Show</title>
+</head>
+<body>
+    <header class="show-page df aic jcse" id="show-page">
+        Slideshow w/ Canvas
+        <div class="img-bg-show"></div>
+        <h1 class="prompt">click to enter</h1>
+    </header>
+    <header class="df jcc aic">
+        <div class="df aic jcsb" id="control-list">
+            <h4 id="prev-button"><a href="#" class="control">prev</a></h4>
+            <h4 id="play-button"><a href="#" class="control" id="play-text">auto</a></h4>
+            <h4 id="next-button"><a href="#" class="control">next</a></h4>
+        </div>
+        <div class="navbar df aic jcse" id="player">
+            <h5><a href="#" id="back-cover">Back to Cover Page</a></h5>
+            <h5>Settings</h5>
+            <div class="df aic jcc fdc">
+                <h5>Transition</h5>
+                <label class="custom-select">
+                    <select id="select">
+                        <option selected value="1">Plain</option>
+                        <option value="2">Blurry</option>
+                        <option value="3">Gray Scale</option>
+                        <option value="4">Fade In</option>
+                    </select>
+                </label>
+            </div>
+            <div class="df aic jcc fdc">
+                <h5 id="toggle-text">Sequential</h5>
+                <label class="toggle" id="toggle" style="margin-left: 0">>
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="df aic jcc fdc" id="direction-box">
+                <h5 id="toggle-text-direction">Forward</h5>
+                <label class="toggle" id="toggle-direction" style="margin-left: 0">>
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="label" id="player-menu">menu</div>
+        <div class="backstage df aic jcc">
+            <canvas id="res-canvas" width="960" height="560">
+
+            </canvas>
+            <div id="caption">Caption</div>
+        </div>
+    </header>
+    <script  src="../shared/scripts/jquery-3.6.0.js"></script>
+    <script  src="scripts/script.js"></script>
+    <script  src="scripts/canvas.js"></script>
+</body>
+</html>

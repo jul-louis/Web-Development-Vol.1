@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<questions>
+    <subject>XML &amp; Ajax Problem Set</subject>
+    <overview>This quiz contains 8 questions, 1 mark each. Click "Submit" to grade and get the answers. </overview>
+    <question>
+        <type>MC</type>
+        <description>What does XML stand for?</description>
+        <choices>
+            <choice>Extra Markup Language</choice>
+            <choice>Expensive Machine Line</choice>
+            <choice>Extensible Markup Language</choice>
+            <choice>Extensible Machine Line</choice>
+        </choices>
+        <answer>2</answer>
+        <explanation>The Correct Answer is Extensible Markup Language.</explanation>
+    </question>
+    <question>
+        <type>MC</type>
+        <description>Which statement is true? Choose the best one.</description>
+        <choices>
+            <choice>Ajax applications separate client-side user interaction and server communication, and run them in
+                parallel, making the delays of server-side processing more transparent to the user.</choice>
+            <choice>“Raw” Ajax uses JavaScript to send asynchronous requests to the server, then updates the page using the DOM.</choice>
+            <choice>Client-side of Ajax applications are written in HTML5 and CSS3. Uses JavaScript to add functionality to the user interface.</choice>
+            <choice>All above are true!</choice>
+        </choices>
+        <answer>3</answer>
+        <explanation>The Correct Answer is all above are true.</explanation>
+    </question>
+    <question>
+        <type>MA</type>
+        <description>Select all that apply: Which of the following is the property of XMLHttpRequest Object?</description>
+        <choices>
+            <choice>readystatechange</choice>
+            <choice>onreadystatechange</choice>
+            <choice>var</choice>
+            <choice>status</choice>
+            <choice>All above are not properties of an XMLHttpRequest object.</choice>
+        </choices>
+        <answer>0</answer>
+        <answer>1</answer>
+        <answer>3</answer>
+        <explanation>The Correct Answer is readystatechange, onreadystatechange, and status. </explanation>
+    </question>
+    <question>
+        <type>TF</type>
+        <description>Statement: XML preserves white spaces.</description>
+        <choices>
+            <choice>True</choice>
+            <choice>False</choice>
+        </choices>
+        <answer>0</answer>
+        <explanation>The Correct Answer is True.</explanation>
+    </question>
+    <question>
+        <type>MC</type>
+        <description>What is the correct syntax of the declaration which defines the XML version?</description>
+        <choices>
+            <choice>&lt;?xml version=1.0?&gt;</choice>
+            <choice>&lt;?xml version="1.0"&gt;</choice>
+            <choice>&lt;xml version="1.0"/&gt;</choice>
+            <choice>&lt;?xml version="1.0"?&gt;</choice>
+        </choices>
+        <answer>3</answer>
+        <explanation>The Correct Answer is &lt;?xml version="1.0"?&gt;.</explanation>
+    </question>
+    <question>
+        <type>TF</type>
+        <description>Statement: XML elements cannot be empty.</description>
+        <choices>
+            <choice>True</choice>
+            <choice>False</choice>
+        </choices>
+        <answer>1</answer>
+        <explanation>The Correct Answer is False. XML elements can be empty.</explanation>
+    </question>
+    <question>
+        <type>MC</type>
+        <description>Which statement is true?</description>
+        <choices>
+            <choice>Attributes must occur in defined order.</choice>
+            <choice>Attributes must always be present.</choice>
+            <choice>None of the first two statements are true.</choice>
+            <choice>Both of the first two statements are true  </choice>
+        </choices>
+        <answer>2</answer>
+        <explanation>The Correct Answer is, None of the first two statements are true.</explanation>
+    </question>
+    <question>
+        <type>MA</type>
+        <description>Select all that apply: Which is not a correct name for an XML element?</description>
+        <choices>
+            <choice>&lt;street&gt;</choice>
+            <choice>&lt;10year&gt;</choice>
+            <choice>&lt;Last Name&gt;</choice>
+            <choice>&lt;h1&gt;</choice>
+        </choices>
+        <answer>1</answer>
+        <answer>2</answer>
+        <explanation>The Correct Answer is, &lt;10year&gt;, and &lt;Last Name&gt; are invalid.</explanation>
+    </question>
+</questions>

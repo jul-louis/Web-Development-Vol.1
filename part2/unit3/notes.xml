@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<notes>
+    <subject>XML &amp; Ajax</subject>
+    <overview>
+        This page introduces the essentials od XML and Ajax, and guides you to develop Ajax-enabled RIAs (Rich Internet Applications).
+    </overview>
+    <topic>
+        <title>XML</title>
+        <subtopic>
+            <title>Intro</title>
+            <content>
+                <entry>
+                    XML (Extensible Markup Language)  is a portable, widely supported, open technology for data storage and exchange
+                </entry>
+                <entry>XML permits document authors to create markup for virtually any type of information.</entry>
+                <entry>XML describes data in a way that human beings can understand and computers can process.</entry>
+                <entry>
+                    An XML document can reference a Document Type Definition (DTD) or schema that defines the
+                    document’s proper structure. An XML document that conforms to a DTD/schema
+                    (i.e., has the appropriate structure) is valid. If an XML parser (validating or non-validating) can
+                    process an XML document successfully, that XML document is well-formed.
+                </entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>Structure</title>
+            <content>
+                <entry>
+                    An XML document begins with an optional XML declaration, which identifies the document as an XML
+                    document. The version attribute specifies the version of XML syntax used in the document.
+                </entry>
+                <entry>
+                    XML element names can be of any length and can contain letters, digits, underscores, hyphens and
+                    periods. A name must begin with either a letter or an underscore, and they should not begin with
+                    “xml” in any combination of uppercase and lowercase letters, as this is reserved for use in the XML standards.
+                </entry>
+                <entry>
+                    Using markup characters (e.g., &lt;, &gt;, and &amp;) in parsed character data is an error. Use
+                    character entity references (e.g., &amp;lt;, &amp;gt;, and &amp;amp;) instead.
+                </entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>Namespaces</title>
+            <content>
+                <entry>XML namespaces provide a means for document authors to prevent naming collisions.</entry>
+                <entry>
+                    Each namespace prefix is bound to a uniform resource identifier (URI) that uniquely identifies the namespace.
+                </entry>
+                <entry>
+                    To eliminate the need to place a namespace prefix in each element, authors can specify a default
+                    namespace for an element and its children
+                </entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>DTDs &amp; Schemas</title>
+            <content>
+                <entry>
+                    DTDs: Document Type Definitions
+                </entry>
+                <entry>
+                    DTDs and schemas specify documents’ element types and attributes, and their relationships to one another
+                </entry>
+                <entry>
+                    DTDs and schemas enable an XML parser to verify whether an XML document is valid (i.e., its
+                    elements contain the proper attributes and appear in the proper sequence)
+                </entry>
+                <entry>
+                    Schemas are not like DTDs, Schemas use XML syntax not EBNF grammar; XML Schema documents can specify
+                    what type of data (e.g., numeric, text) an element can contain.
+                </entry>
+                <entry>Two categories of types exist in XML Schema: simple types and complex types</entry>
+                <entry>
+                    Every simple type defines a restriction on an XML Schema-defined schema type or on a user-defined type.
+                    Complex types can have either simple content or complex content (Both can contain attributes, but only complex content can contain child elements).
+                </entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>XSL</title>
+            <content>
+                <entry>XSL: Extensible Stylesheet Language</entry>
+                <entry>XSL converts XML into any text-based document</entry>
+                <entry>
+                    XSL style sheets can be connected directly to an XML document by adding an xml:stylesheet
+                    processing instruction to the XML document.
+                </entry>
+                    XSL enables document authors to separate data presentation (specified in XSL documents) from data description
+                    (specified in XML document).
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>DOM</title>
+            <content>
+                <entry>
+                    Retrieving data from an XML document using traditional sequential file processing techniques is neither practical nor efficient.
+                </entry>
+                <entry>
+                    XMLHttpRequest object can be used to load an XML document. Typically, such an object is used with
+                    Ajax to make asynchronous requests to a server—the topic of the next chapter.
+                </entry>
+                <entry>
+                    XMLHttpRequest object’s open method is used to create a get request for an XML document at a specified URL.
+                </entry>
+                <entry>Use XPath expressions to specify search criteria.</entry>
+            </content>
+        </subtopic>
+    </topic>
+    <topic>
+        <title>Ajax</title>
+        <subtopic>
+            <title>Intro</title>
+            <content>
+                <entry>
+                    Ajax applications separate client-side user interaction and server communication, and run them in
+                    parallel, making the delays of server-side processing more transparent to the user.
+                </entry>
+                <entry>
+                    “Raw” Ajax uses JavaScript to send asynchronous requests to the server, then updates the page using the DOM.
+                </entry>
+                <entry>
+                    Client-side of Ajax applications are written in HTML5 and CSS3. Uses JavaScript to add functionality to the user interface.
+                </entry>
+                <entry>XML and JSON are used to structure the data passed between the server and the client.</entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>Using XML &amp; the DOM</title>
+            <content>
+                <entry>
+                    When passing structured data between the server and the client, Ajax applications often use XML
+                    because it consumes little bandwidth and is easy to parse.
+                </entry>
+                <entry>DOM method createElement creates an HTML5 element of the specified type.</entry>
+                <entry>DOM method appendChild inserts one HTML5 element into another.</entry>
+                <entry>
+                    innerHTML property of a DOM element can be used to obtain or change the HTML5 that is displayed in a particular element.
+                </entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>JSON</title>
+            <content>
+                <entry>
+                    JSON (JavaScript Object Notation) is a simper alternative to XML for passing data between the
+                    client and the server. It's a simple way to represent JS objects as strings.
+                </entry>
+                <entry>
+                    A JSON object is represented as a list of property names and values contained in curly
+                    braces.
+                </entry>
+                <entry>
+                    We use JSON to encode server-side responses and to create objects on the fly.
+                </entry>
+            </content>
+        </subtopic>
+    </topic>
+</notes>

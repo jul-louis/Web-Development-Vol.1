@@ -1,0 +1,112 @@
+<form id="unit-form" class="df aic jcc fdc" name="unit" action="JavaScript:checkTextFieldValid('form-text-field')" method="POST">
+    <script  src="../part4/scripts/unit.js"></script>
+    <div>
+        <h6>Unit Conversion</h6>
+    </div>
+    <div>
+        <label class="custom-select">
+            <select class="form-select form-element" id="unit-type">
+                <option selected disabled>Select Measurements... E.g., Length, Weight, ...</option>
+                <option value="l">Length</option>
+                <option value="w">Weight</option>
+                <option value="a">Area</option>
+                <option value="v">Volume</option>
+            </select>
+        </label>
+        <br/>
+        <label class="custom-select">
+            <input class="unit-value form-element form-text-field" id="o-value" name="original-value" type="text" placeholder="69">
+            <select class="form-select form-element" id="unit-value-1">
+                <option selected disabled>Select Unit...&emsp;</option>
+                <optgroup label="Length" class="unit-opt-l" hidden>
+                    <option value="km" class="unit-opt-l" hidden>Kilometer</option>
+                    <option value="m" class="unit-opt-l" hidden>Meter</option>
+                    <option value="cm" class="unit-opt-l" hidden>Centimeter</option>
+                    <option value="mm" class="unit-opt-l" hidden>Millimeter</option>
+                    <option value="um" class="unit-opt-l" hidden>Micrometer</option>
+                    <option value="nm" class="unit-opt-l" hidden>Nanometer</option>
+                    <option value="in" class="unit-opt-l" hidden>Inch</option>
+                    <option value="ft" class="unit-opt-l" hidden>Foot</option>
+                    <option value="mi" class="unit-opt-l" hidden>Mile</option>
+                </optgroup>
+                <optgroup label="Weight" class="unit-opt-w" hidden>
+                    <option value="tn" class="unit-opt-w" hidden>tonne</option>
+                    <option value="kg" class="unit-opt-w" hidden>Kilogram</option>
+                    <option value="g" class="unit-opt-w" hidden>Gram</option>
+                    <option value="it" class="unit-opt-w" hidden>Imperial ton</option>
+                    <option value="ust" class="unit-opt-w" hidden>US ton</option>
+                    <option value="p" class="unit-opt-w" hidden>Pound</option>
+                    <option value="oc" class="unit-opt-w" hidden>Ounce</option>
+                </optgroup>
+                <optgroup label="Area" class="unit-opt-a" hidden>
+                    <option value="m2" class="unit-opt-a" hidden>Square meter</option>
+                    <option value="km2" class="unit-opt-a" hidden>Square kilometer</option>
+                    <option value="in2" class="unit-opt-a" hidden>Square Inch</option>
+                    <option value="ft2" class="unit-opt-a" hidden>Square Foot</option>
+                    <option value="ac2" class="unit-opt-a" hidden>Acre</option>
+                    <option value="hc2" class="unit-opt-a" hidden>Hectare</option>
+                    <option value="mi2" class="unit-opt-a" hidden>Square Mile</option>
+                </optgroup>
+                <optgroup label="Volume" class="unit-opt-v" hidden>
+                    <option value="l" class="unit-opt-v" hidden>Liter</option>
+                    <option value="ml" class="unit-opt-v" hidden>Milliliter</option>
+                    <option value="m3" class="unit-opt-v" hidden>Cubic meter</option>
+                    <option value="ft3" class="unit-opt-v" hidden>Cubic foot</option>
+                    <option value="in3" class="unit-opt-v" hidden>Cubic inch</option>
+                    <option value="ig" class="unit-opt-v" hidden>Imperial gallon</option>
+                    <option value="uslg" class="unit-opt-v" hidden>US liquid gallon</option>
+                </optgroup>
+            </select>
+        </label>
+        <h3 class="equal">=</h3>
+        <label class="custom-select">
+            <input class="unit-value" id="c-value" name="converted-value" type="text" readonly="">
+            <select class="form-select form-element" id="unit-value-2">
+                <option selected disabled>Select Unit...&emsp;</option>
+                <optgroup label="Length" class="unit-opt-l" hidden>
+                    <option value="km" class="unit-opt-l" hidden>Kilometer</option>
+                    <option value="m" class="unit-opt-l" hidden>Meter</option>
+                    <option value="cm" class="unit-opt-l" hidden>Centimeter</option>
+                    <option value="mm" class="unit-opt-l" hidden>Millimeter</option>
+                    <option value="um" class="unit-opt-l" hidden>Micrometer</option>
+                    <option value="nm" class="unit-opt-l" hidden>Nanometer</option>
+                    <option value="in" class="unit-opt-l" hidden>Inch</option>
+                    <option value="ft" class="unit-opt-l" hidden>Foot</option>
+                    <option value="mi" class="unit-opt-l" hidden>Mile</option>
+                </optgroup>
+                <optgroup label="Weight" class="unit-opt-w" hidden>
+                    <option value="tn" class="unit-opt-w" hidden>tonne</option>
+                    <option value="kg" class="unit-opt-w" hidden>Kilogram</option>
+                    <option value="g" class="unit-opt-w" hidden>Gram</option>
+                    <option value="it" class="unit-opt-w" hidden>Imperial ton</option>
+                    <option value="ust" class="unit-opt-w" hidden>US ton</option>
+                    <option value="p" class="unit-opt-w" hidden>Pound</option>
+                    <option value="oc" class="unit-opt-w" hidden>Ounce</option>
+                </optgroup>
+                <optgroup label="Area" class="unit-opt-a" hidden>
+                    <option value="m2" class="unit-opt-a" hidden>Square meter</option>
+                    <option value="km2" class="unit-opt-a" hidden>Square kilometer</option>
+                    <option value="in2" class="unit-opt-a" hidden>Square Inch</option>
+                    <option value="ft2" class="unit-opt-a" hidden>Square Foot</option>
+                    <option value="ac" class="unit-opt-a" hidden>Acre</option>
+                    <option value="hc" class="unit-opt-a" hidden>Hectare</option>
+                    <option value="mi2" class="unit-opt-a" hidden>Square Mile</option>
+                </optgroup>
+                <optgroup label="Volume" class="unit-opt-v" hidden>
+                    <option value="l" class="unit-opt-v" hidden>Liter</option>
+                    <option value="ml" class="unit-opt-v" hidden>Milliliter</option>
+                    <option value="m3" class="unit-opt-v" hidden>Cubic meter</option>
+                    <option value="ft3" class="unit-opt-v" hidden>Cubic foot</option>
+                    <option value="in3" class="unit-opt-v" hidden>Cubic inch</option>
+                    <option value="ig" class="unit-opt-v" hidden>Imperial gallon</option>
+                    <option value="uslg" class="unit-opt-v" hidden>US liquid gallon</option>
+                </optgroup>
+            </select>
+        </label>
+    </div>
+    <br/>
+    <div class="df aic jcc fdc">
+        <button class="btn" type="submit">Auto Convert</button>
+        <button class="btn" type="reset">Clear</button>
+    </div>
+</form>

@@ -1,0 +1,170 @@
+body {
+    overflow: scroll;
+}
+
+.std-format {
+    margin:2rem 2rem 1rem 2rem;
+    padding: 2rem;
+}
+
+.banner {
+    background: black;
+    border-radius: 8px;
+}
+
+.banner a {
+    color: white;
+    text-decoration-color: white;
+}
+
+.banner a:hover {
+    text-decoration-color: red;
+}
+
+.banner h1 {
+    color: #FFFCFC;
+}
+
+.banner h2 {
+    font-style: normal;
+    color: #FFFCFC;
+    margin-top: 1rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: lighter;
+}
+
+section h3 {
+    color: black;
+    padding: 10px 0;
+}
+
+section p {
+    color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+section a {
+    color: red;
+    font-style: italic;
+}
+
+#tma-nav {
+    background: #FFF0F1;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: lighter;
+    height: 59px;
+    z-index: 20;
+}
+
+.lg-nav {
+    display: compact;
+}
+
+.md-nav {
+    display: none;
+    float: right;
+}
+
+.toolkit{
+    font-size: 1.5rem;
+    float: left;
+    padding: 15px 15px 15px 15px;
+    color: #1F1A1F;
+    font-weight: 400;
+    cursor: default;
+}
+
+#tma-nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+#tma-nav ul li {
+    display: inline-block;
+    text-align: center;
+    width: 18rem;
+    padding: 15px 20px 15px 20px;
+    font-size: 1.5rem;
+}
+
+#tma-nav ul li:hover {
+    background: #574957;
+    color: white;
+}
+
+#tma-nav ul li:hover a {
+    color: white;
+}
+
+#tma-nav ul li a {
+    text-decoration: none;
+}
+
+.md-nav ul {
+    display: none;
+    position: absolute;
+    background-color: #574957;
+    width: 12rem;
+    top: 59px;
+    right: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.md-nav ul li {
+    display: block;
+}
+
+.md-nav ul li a{
+    display: block;
+    color: black;
+}
+
+.md-nav ul:hover li{
+    background: #1F1A1F;
+}
+
+.md-nav ul li:hover a{
+    display: block;
+    color: white;
+}
+
+.md-nav li:hover > ul {
+    display: inherit;
+}
+
+.menu-icon {
+    font-size: 3rem;
+    line-height: 0;
+}
+
+.menu-icon:hover {
+    color: #FFFCFC;
+    cursor: default;
+}
+
+section {
+    background: #FFFCFC;
+    border-radius: 8px;
+}
+
+.sub {
+    font-style: italic;
+    text-decoration: 1px underline solid #1F1A1F;
+}
+
+@media screen and (max-width: 850px) {
+    .lg-nav {
+        display: none;
+    }
+
+    .md-nav {
+        display: inline-block;
+    }
+
+    #tma-nav ul li {
+        width: 12rem;
+    }
+}

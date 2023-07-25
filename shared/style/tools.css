@@ -1,0 +1,187 @@
+body {
+    overflow: scroll;
+}
+
+#tool-nav {
+    background: #FFF0F1;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: lighter;
+    height: 59px;
+    z-index: 20;
+}
+
+.lg-nav {
+    display: compact;
+}
+
+.md-nav {
+    display: none;
+    float: right;
+}
+
+.toolkit{
+    font-size: 1.5rem;
+    float: left;
+    padding: 15px 15px 15px 15px;
+    color: #1F1A1F;
+    font-weight: 400;
+    cursor: default;
+}
+
+#tool-nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+#tool-nav ul li {
+    display: inline-block;
+    text-align: center;
+    width: 18rem;
+    padding: 15px 20px 15px 20px;
+    font-size: 1.5rem;
+}
+
+#tool-nav ul li:hover {
+    background: #574957;
+    color: white;
+}
+
+#tool-nav ul li:hover a {
+    color: white;
+}
+
+#tool-nav ul li a {
+    text-decoration: none;
+}
+
+.md-nav ul {
+    display: none;
+    position: absolute;
+    background-color: #574957;
+    width: 12rem;
+    top: 59px;
+    right: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.md-nav ul li {
+    display: block;
+}
+
+.md-nav ul li a{
+    display: block;
+    color: black;
+}
+
+.md-nav ul:hover li{
+    background: #1F1A1F;
+}
+
+.md-nav ul li:hover a{
+    display: block;
+    color: white;
+}
+
+.md-nav li:hover > ul {
+    display: inherit;
+}
+
+.menu-icon {
+    font-size: 3rem;
+    line-height: 0;
+}
+
+.menu-icon:hover {
+    color: #FFFCFC;
+    cursor: default;
+}
+
+#collection {
+    position: absolute;
+    z-index: 100;
+    top:0;
+    right: 0;
+}
+
+#tool-content {
+    color: black;
+    margin: 2rem;
+    padding: 2rem;
+    background: #FFFCFC;
+    border-radius: 8px;
+}
+
+#tool-guide {
+    margin: 2rem;
+    padding: 2rem;
+}
+
+#tool-guide h4 {
+    font-style: normal;
+    font-size: 2rem;
+}
+
+#tool-content h6 {
+    font-style: normal;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.btn {
+    width: 18rem;
+    text-align: center;
+}
+
+.equal {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.unit-value {
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    background: #FFFCFC;
+}
+
+.bare-text {
+    padding: 10px;
+    border-radius: 8px;
+    background: #FFFCFC;
+}
+
+.input-area {
+    width: 450px;
+    margin-bottom: 2rem;
+}
+
+.input-area label, .input-area input {
+    padding: 10px;
+    margin: 0 20px 20px 20px;
+}
+
+#bmi-us-ft, #bmi-us-in, #bmi-us-p {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+@media screen and (max-width: 850px) {
+    .lg-nav {
+        display: none;
+    }
+
+    .md-nav {
+        display: inline-block;
+    }
+
+    #tool-nav ul li {
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width: 499px) {
+     .input-area {
+         width: 300px;
+     }
+}

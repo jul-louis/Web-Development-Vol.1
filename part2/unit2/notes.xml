@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<notes>
+    <subject>JavaScript</subject>
+    <overview>
+        This chapter covers the introduction to Client-side Scripting in JavaScript. JS is a powerful language which is
+        applied to enhance functionality and appearance of web pages.
+    </overview>
+    <topic>
+        <title>JS</title>
+        <subtopic>
+            <title>
+                Intro
+            </title>
+            <content>
+                <entry>
+                    Often, JavaScripts appear in the &lt;head&gt; section of the HTML5 document, The &lt;script&gt; tag
+                    indicates to the browser that the text that follows is part of a script. Attribute type specifies
+                    the scripting language used in the script—such as text/javascript.
+                </entry>
+                <entry>
+                    JavaScript is case-sensitive; not using the proper uppercase and lowercase letters is a syntax error.
+                </entry>
+                <entry>
+                    Escape Sequences: When a backslash is encountered in a string of characters, the next character is
+                    combined with the backslash to form an escape sequence. The escape sequence \n is the newline
+                    character. It causes the cursor in the HTML5 document to move to the beginning of the next line.
+                </entry>
+                <entry>
+                    Keywords are words with special meaning in JavaScript.
+                </entry>
+                <entry>
+                    Keyword var: var is used to declare the name of variables. All variables have a name, type and
+                    value, and should be declared with a var statement before they are used in a script.
+                </entry>
+                <entry>
+                    A variable name can be any valid identifier consisting of letters, digits, underscores and dollar
+                    signs that does not begin with a digit and is not a reserved JavaScript keyword.
+                </entry>
+                <entry>
+                    A variable is assigned a value with an assignment statement, using the assignment operator, =.
+                </entry>
+                <entry>
+                    JavaScript is referred to as a loosely typed language. When a variable is declared in JavaScript,
+                    but is not given a value, it has an undefined value.
+                </entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>
+                Control Statements
+            </title>
+            <content>
+                <entry>
+                    Algorithm: A procedure for solving a problem in terms of the actions to be executed, and the order in which
+                    the actions are to be executed.
+                </entry>
+                <entry>
+                    All scripts can be written in terms of only three control statements: sequence, selection, or repetition.
+                </entry>
+                <entry>
+                    JavaScript provides three selection structures. if, if...else, and switch.
+                </entry>
+                <entry>
+                    JavaScript provides four repetition statements, namely, while, do...while, for and for...in.
+                </entry>
+                <entry>
+                    break statement in a while, for, do...while or switch statement causes immediate exit from the statement.
+                    Execution continues with the next statement in sequence.
+                </entry>
+                <entry>
+                    continue statement in a while, for or do...while skips the remaining statements in the body of the
+                    statement and proceeds with the next iteration of the loop. In while and do...while statements, the
+                    loop-continuation test evaluates immediately after the continue statement executes. In for
+                    statements, the increment expression executes, then the loop-continuation test evaluates.
+                </entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>
+                Functions
+            </title>
+            <content>
+                <entry>
+                    A function must be called explicitly for the code in its body to execute. The format of a function
+                    definition is: function function-name( parameter-list ) { declarations and statements }
+                </entry>
+                <entry>
+                    A function’s parameters are also considered to be local variables.
+                </entry>
+                <entry>
+                    Global variables or script-level variables are accessible in any part of a script and are said to
+                    have global scope.
+                </entry>
+                <entry>
+                    Function scope begins with the opening left brace ( { ) of the function in which the identifier is
+                    declared and ends at the terminating right brace ( } ).
+                </entry>
+                <entry>
+                    JS Global Functions: JavaScript provides nine global functions as part of a Global object, which
+                    contains all the global variables in the script, all the user-defined functions in the script, all
+                    the built-in functions: isFinite, isNaN, parseFloat, parseInt.
+                </entry>
+                <entry>
+                    A recursive function calls itself, either directly, or indirectly through another function. A
+                    recursive function knows how to solve only the simplest case, or base case.
+                </entry>
+            </content>
+        </subtopic>
+        <subtopic>
+            <title>DOM</title>
+            <content>
+                <entry>
+                    DOM (Document Object Model) allows to access to all elements on a web page.
+                </entry>
+                <entry>
+                    Traversal: The JavaScript code declares two variables: Variable currentNode keeps track of the currently
+                    highlighted node—the functionality of each button depends on which node is currently selected.
+                    Variable idcount is used to assign a unique id to any new elements that are created.
+                </entry>
+                <entry>
+                    The DOM element methods setAttribute and getAttribute allow you to modify an attribute value and
+                    get an attribute value, respectively.
+                </entry>
+            </content>
+        </subtopic>
+    </topic>
+</notes>
